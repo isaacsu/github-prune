@@ -1,0 +1,16 @@
+{
+  "name": "Prune",
+  "description": "Prunit all",
+  "version": "1.0",
+  "permissions": [
+
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*/pull/*"],
+      "js": ["lodash.min.js", "prune.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "manifest_version": 2
+}
