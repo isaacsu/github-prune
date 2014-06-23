@@ -6,7 +6,7 @@ function handleTabClick(ev) {
 
   if (_mounted) return true;
   if (1 || containerId == 'files_bucket') {
-    var diffs = _.chain(document.querySelectorAll('div.js-details-container'))
+    var diffs = _.chain(document.querySelectorAll('div.js-details-container.file'))
       .filter(function(el) { return el.getAttribute('id').indexOf('diff-') === 0 })
       .map(function(el) {
         var meta = _.find(el.children, function(child) { 
