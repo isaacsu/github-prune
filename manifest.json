@@ -8,7 +8,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.github.com/*/pull/*"],
-      "js": ["lodash.min.js", "prune.js"],
+      "js": ["zepto.min.js", "lodash.min.js", "md5.js", "enc-base64-min.js", "prune.js"],
+      "css": ["style.css"],
       "run_at": "document_start"
     }
   ],
